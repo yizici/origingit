@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="./getUrl.js" type="text/javascript"></script>
+</head>
+<script>
+    var userName = $.getUrlParam('username');
+    var passWord = $.getUrlParam('password');
+    var sex = $.getUrlParam('sex');
+    var hobby = $.getUrlParam('hobby');
+	var photo = $.getUrlParam('photo');
+    var newYearWord = $.getUrlParam('wish');
+    window.onload = function () {
+        $(".addUserName").val(userName);
+        $(".addPassWord").val(passWord);
+        $(".addSex").val(sex);
+        $(".addHobby").val(hobby);
+		$(".photo").val(photo);
+        $(".addNewYearWord").val(newYearWord);
+    }
+</script>
+<body>
+<label>UserName：</label><input type="text" class="addUserName"/>
+<label>PassWord：</label><input type="text" class="addPassWord"/>
+<label>Sex：</label><input type="text" class="addSex"/>
+<label>Hobby：</label><input type="text" class="addHobby"/>
+<label>Photo：</label><input type="text" class="photo"/>
+<label>NewYearWord：</label><input type="text" class="addNewYearWord"/>
+</body>
+</html>

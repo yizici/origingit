@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<script>
+    var userName = $.getUrlParam('username');
+    var passWord = $.getUrlParam('psw');
+    var sex = $.getUrlParam('sex');
+    var hobby = $.getUrlParam('hobby');
+    var newYearWord = $.getUrlParam('wish');
+    window.onload = function () {
+        $(".addUserName").val(userName);
+        $(".addPassWord").val(passWord);
+        $(".addSex").val(sex);
+        $(".addHobby").val(hobby);
+        $(".addNewYearWord").val(newYearWord);
+    }
+</script>
+<body>
+	<label>UserName：</label><input type="text" class="addUserName"/>
+<label>PassWord：</label><input type="text" class="addPassWord"/>
+<label>Sex：</label><input type="text" class="addSex"/>
+<label>Hobby：</label><input type="text" class="addHobby"/>
+<label>NewYearWord：</label><input type="text" class="addNewYearWord"/>
+</body>
+</html>
